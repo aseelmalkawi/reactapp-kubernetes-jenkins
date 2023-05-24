@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/aseelmalkawi/reactapp-kubernetes-jenkins.git'
+        checkout scm: [$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[credentialsId: 'PUBLIC_KEY', url: 'git@github.com:aseelmalkawi/reactapp-kubernetes-jenkins.git']]] 
       }
     }
 
