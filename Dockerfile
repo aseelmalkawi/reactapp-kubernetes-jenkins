@@ -7,7 +7,7 @@ WORKDIR /react-app
 #Copy the React.js application dependencies from the package.json to the react-app working directory.
 COPY package.json .
 
-COPY package-lock.json .
+#COPY package-lock.json .
 
 #install all the React.js application dependencies
 RUN npm i
