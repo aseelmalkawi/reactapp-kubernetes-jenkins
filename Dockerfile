@@ -5,7 +5,7 @@ FROM node:19-alpine3.16
 WORKDIR /react-app
 
 #Copy the React.js application dependencies from the package.json to the react-app working directory.
-COPY package.json .
+#COPY package.json .
 
 #COPY package-lock.json .
 
